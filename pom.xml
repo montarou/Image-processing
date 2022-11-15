@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>1.162</version>
+		<relativePath />
+	</parent>
+
+	<groupId>sc.fiji</groupId>
+	<artifactId>Cross_Fader</artifactId>
+	<version>1.0.0</version>
+
+	<name>Cross Fader</name>
+	<description>An ImageJ 1.x plugin to compare two images</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+			<version>${imagej1.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<resources>
+			<resource>
+				<directory>${basedir}/src/main/resources</directory>
+			</resource>
+			<resource>
+				<directory>${project.build.sourceDirectory}</directory>
+			</resource>
+		</resources>
+		<testResources>
+			<testResource>
+				<directory>${basedir}/src/test/resources</directory>
+			</testResource>
+			<testResource>
+				<directory>${project.build.testSourceDirectory}</directory>
+			</testResource>
+		</testResources>
+	</build>
+
+	<developers>
+		<developer>
+			<id>schmid</id>
+			<name>Michael Schmid</name>
+			<email>schmid@iap.tuwien.ac.at</email>
+			<url>http://www.iap.tuwien.ac.at/www/surface/group/schmid/index</url>
+			<organization>Institut für Angewandte Physik, TU Wien</organization>
+			<organizationUrl>http://www.iap.tuwien.ac.at/www/index</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+	</developers>
+
+	<repositories>
+		<!-- NB: for project parent -->
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<scm>
+		<connection>scm:git:git://github.com/fiji/Cross_Fader</connection>
+		<developerConnection>scm:git:git@github.com:fiji/Cross_Fader</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/fiji/Cross_Fader</url>
+	</scm>
+
+</project>
