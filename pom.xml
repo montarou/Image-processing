@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>net.imagej</groupId>
+  <artifactId>imagej-archetype-ij1-plugin</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>maven-archetype</packaging>
+
+  <name>ImageJ 1.x plugin archetype</name>
+
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-webdav-jackrabbit</artifactId>
+        <version>1.0</version>
+      </extension>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>2.2</version>
+      </extension>
+    </extensions>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-archetype-plugin</artifactId>
+          <version>2.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <description>A Maven project implementing an ImageJ 1.x plugin</description>
+
+  <url>http://imagej.net/Maven</url>
+
+  <developers>
+    <developer>
+      <id>dscho</id>
+      <name>Johannes Schindelin</name>
+      <email>johannes.schindelin@gmx.de</email>
+      <url>http://loci.wisc.edu/people/johannes-schindelin</url>
+      <organization>UW-Madison LOCI</organization>
+      <organizationUrl>http://loci.wisc.edu/</organizationUrl>
+      <roles>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+      <timezone>-6</timezone>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>Simplified BSD License</name>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:git://github.com/imagej/minimal-ij1-plugin</connection>
+    <developerConnection>scm:git:git@github.com:imagej/minimal-ij1-plugin</developerConnection>
+    <url>https://github.com/imagej/minimal-ij1-plugin</url>
+  </scm>
+</project>
