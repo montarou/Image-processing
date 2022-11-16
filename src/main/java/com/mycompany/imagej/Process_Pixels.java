@@ -4,6 +4,8 @@
  *
  * See the CC0 1.0 Universal license for details:
  *     http://creativecommons.org/publicdomain/zero/1.0/
+ *     
+ *     Modification GM 16/11/2022
  */
 
 package com.mycompany.imagej;
