@@ -16,6 +16,7 @@ import ij.ImagePlus;
 import ij.gui.GenericDialog;
 import ij.plugin.filter.PlugInFilter;
 import ij.process.ImageProcessor;
+import javax.swing.JOptionPane;
 
 /**
  * A template for processing each pixel of either
@@ -181,6 +182,12 @@ public class Process_Pixels implements PlugInFilter {
 		// start ImageJ
 		new ImageJ();
 
+		String nom = JOptionPane.showInputDialog("Quel est ton nom ?");
+		String message = String.format("Salut %s. Java est cool, n'est ce pas ?", nom);
+        JOptionPane.showInternalMessageDialog(null,message);
+        
+		
+		
 		// open the Clown sample
 		ImagePlus image = IJ.openImage("http://imagej.net/images/clown.jpg");
 		image.show();
